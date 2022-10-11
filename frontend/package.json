@@ -1,0 +1,24 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@types/slate": "^0.47.11",
+    "astro": "^1.4.6",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "@types/escape-html": "^1.0.2",
+    "@types/qs": "^6.9.7",
+    "escape-html": "^1.0.3",
+    "slate": "^0.82.1"
+  }
+}

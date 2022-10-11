@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getPosts } from "../../api";
+import Card from "../../components/Card.astro";
+
+const data = await getPosts();
+const posts = data.docs;
+---
+
+<Layout title={"Posts"}>
+  {
+    posts.map((post) => (
+      <Card
+        href={`/posts/${post.slug}`}
+        title={post.title || "Untitled"}
+        body={post.description || "No description"}
+      />
+    ))
+  }
+</Layout>
